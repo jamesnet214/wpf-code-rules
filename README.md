@@ -30,6 +30,7 @@ public string Email
     set { _email = value; OnPropertyChanged(); } 
 }
 ```
+Be sure to name the `private` access restrictor for the variable.
 ~base.OnPropertyChanged();~   
 *Do not recommended to use `.base` for prefixes.*
 
