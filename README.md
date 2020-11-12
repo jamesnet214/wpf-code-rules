@@ -3,12 +3,12 @@
 ## Property Code Styles
 
 ### Property
-```
+```csharp
 public string Email { get; set; }
 ```
 
 ### Get Set Property
-```
+```csharp
 private string _email;
 public string Email 
 { 
@@ -18,7 +18,7 @@ public string Email
 ```
 
 ### Observable Property
-```
+```csharp
 private string _email;
 public string Email 
 { 
@@ -27,8 +27,8 @@ public string Email
 }
 ```
 
-### Setter Logic Property
-```
+### Property with method in setter
+```csharp
 private string _email;
 public string Email 
 { 
