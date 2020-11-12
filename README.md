@@ -30,6 +30,7 @@ public string Email
     set { _email = value; OnPropertyChanged(); } 
 }
 ```
+~base.OnPropertyChanged();~
 
 ### Property with method in setter
 ```csharp
