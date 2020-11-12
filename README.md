@@ -1,5 +1,9 @@
 # wpfcoderules
 
+## Getting Started
+## Overview
+1. Property
+2. Region
 ## Property Code Styles
 
 ### Property
@@ -40,7 +44,7 @@ public string Email
 ## Region
 
 ### Region: Property
-'''csharp
+```csharp
 #region Email
 
 private string _email;
@@ -50,4 +54,4 @@ public string Email
     set { _email = value; OnPropertyChanged(); }
 }
 #endregion
-'''
+```
