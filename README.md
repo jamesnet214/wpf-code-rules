@@ -1,11 +1,13 @@
 # wpfcoderules
 
-## Property
+## Property Code Styles
+
+### Property
 ```
 public string Email { get; set; }
 ```
 
-## Get Set Property
+### Get Set Property
 ```
 private string _email;
 public string Email 
@@ -15,7 +17,7 @@ public string Email
 }
 ```
 
-## Observable Property
+### Observable Property
 ```
 private string _email;
 public string Email 
@@ -25,7 +27,7 @@ public string Email
 }
 ```
 
-## Setter Logic Property
+### Setter Logic Property
 ```
 private string _email;
 public string Email 
