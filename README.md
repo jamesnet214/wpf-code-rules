@@ -20,7 +20,7 @@ public string Email
     set { _email = value; } 
 }
 ```
-
+Be sure to name the `private` access restrictor for the variable.
 ### Observable Property
 ```csharp
 private string _email;
@@ -30,7 +30,6 @@ public string Email
     set { _email = value; OnPropertyChanged(); } 
 }
 ```
-Be sure to name the `private` access restrictor for the variable.
 ~base.OnPropertyChanged();~   
 *Do not recommended to use `.base` for prefixes.*
 
