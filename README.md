@@ -31,7 +31,7 @@ public string Email
 }
 ```
 ~base.OnPropertyChanged();~   
-*Do not recommended to use base for prefixes.*
+*Do not recommended to use `.base` for prefixes.*
 
 ### Property with method in setter
 ```csharp
