@@ -30,7 +30,7 @@ public string Email
     set { _email = value; OnPropertyChanged(); } 
 }
 ```
-~base.~OnPropertyChanged();   
+~base.OnPropertyChanged();~   
 *Do not recommended to use base for prefixes.*
 
 ### Property with method in setter
