@@ -36,3 +36,18 @@ public string Email
     set { _email = value; Something(); OnPropertyChanged(); } 
 }
 ```
+
+## Region
+
+### Region: Property
+'''csharp
+#region Email
+
+private string _email;
+public string Email
+{
+    get { return _email; }
+    set { _email = value; OnPropertyChanged(); }
+}
+#endregion
+'''
