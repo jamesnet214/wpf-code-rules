@@ -1,6 +1,6 @@
 # wpfcoderules
 
-## Getting Started
+## Get Started
 ## Overview
 1. Property
 2. Region
