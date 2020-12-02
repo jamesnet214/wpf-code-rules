@@ -79,6 +79,24 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```xaml
   <Style TargetType="{x:Type TreeView}" x:Key="CTRL.TRV.MAIN.EXPLORER"/>
   ```
+  
+* **TRVI**, System.Windows.Controls.**TreeViewItem**   
+
+  ```xaml
+  <Style TargetType="{x:Type TreeViewItem}" x:Key="CTRL.TRVI.MAIN.EXPLORER"/>
+  ```
+  
+* **LBX**, System.Windows.Controls.**ListBox**   
+
+  ```xaml
+  <Style TargetType="{x:Type ListBox}" x:Key="CTRL.LBXI.MAIN.USER"/>
+  ```
+  
+* **LBXI**, System.Windows.Controls.**ListBoxItem**   
+
+  ```xaml
+  <Style TargetType="{x:Type ListBoxItem}" x:Key="CTRL.LBXI.MAIN.USER"/>
+  ```
 
 ## 99. References
 ### Markdown
