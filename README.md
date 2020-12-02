@@ -75,6 +75,10 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
       <Setter Property="">
           <Setter.Value>
               <ControlTemplate TargetType="{x:Type Button}">
+                  <Border>
+                      <ContentPresenter/>
+                  </Border>
+              </ControlTemplate>
           </Setter.Value>
       </Setter>
   </Style>
