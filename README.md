@@ -61,10 +61,9 @@ public string Email
 ## 89. Resource Name
 
 ### 1. Controls
-**CTRL**
+Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
 * System.Windows.**Button** `BTN`   
-Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```xaml
   <Style x:Key="CTRL.BTN.MAIN.OK"/>
   ```
