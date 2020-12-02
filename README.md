@@ -65,6 +65,8 @@ public string Email
   - TextBlock : TXB
   - TreeView : TRV
   - TreeViewItem : TRVI
+  - ListBox : LBX
+  - ListBoxItem : LBXI
 
 ## 99. References
 ### Markdown
