@@ -68,7 +68,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```xaml
   <Style x:Key="CTRL.BTN.MAIN.OK"/>
   ```
-* System.Windows.**TextBlock** > `TXB`   
+* **TXB** System.Windows.**TextBlock** >    
 
   ```xaml
   <Style x:Key="CTRL.TXB.MAIN.HEAder"/>
