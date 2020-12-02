@@ -63,11 +63,11 @@ public string Email
 * System.Windows.**Button** `BTN`   
 
   ```xaml
-  <Style x:Key="CTRL.BTN.MAIN.OK"></Style>
+  <Style x:Key="CTRL.BTN.MAIN.OK"/>
   ```
 * System.Windows.**TextBlock** `TXB` 
   ```xaml
-  <Style x:Key="CTRL.TXB.MAIN.HEAder"></Style>
+  <Style x:Key="CTRL.TXB.MAIN.HEAder"/>
   ```
   - TreeView : TRV
   - TreeViewItem : TRVI
