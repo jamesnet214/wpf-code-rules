@@ -58,6 +58,14 @@ public string Email
 #endregion
 ```
 
+## 89. Resource Name
+
+* Style
+- Button : BTN
+- TextBlock : TXB
+- TreeView : TRV
+- TreeViewItem : TRVI
+
 ## 99. References
 ### Markdown
 [Temp Link](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
