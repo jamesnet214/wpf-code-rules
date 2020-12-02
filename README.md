@@ -63,15 +63,21 @@ public string Email
 ### 1. Controls
 Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
-* **BTN**, System.Windows.**Button**   
+* **BTN**, System.Windows.Controls.**Button**   
 
   ```xaml
   <Style x:Key="CTRL.BTN.MAIN.OK"/>
   ```
-* **TXB**, System.Windows.**TextBlock**   
+* **TXB**, System.Windows.Controls.**TextBlock**   
 
   ```xaml
-  <Style x:Key="CTRL.TXB.MAIN.HEAder"/>
+  <Style x:Key="CTRL.TXB.MAIN.HEADER"/>
+  ```
+  
+* **TRV**, System.Windows.Controls.**TreeView**   
+
+  ```xaml
+  <Style x:Key="CTRL.TRV.MAIN.EXPLORER"/>
   ```
 
 ## 99. References
