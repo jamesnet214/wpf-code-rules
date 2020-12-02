@@ -66,18 +66,18 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * **BTN**, System.Windows.Controls.**Button**   
 
   ```xaml
-  <Style x:Key="CTRL.BTN.MAIN.OK"/>
+  <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
   ```
 * **TXB**, System.Windows.Controls.**TextBlock**   
 
   ```xaml
-  <Style x:Key="CTRL.TXB.MAIN.HEADER"/>
+  <Style TargetType="{x:Type TextBlock}" x:Key="CTRL.TXB.MAIN.HEADER"/>
   ```
   
 * **TRV**, System.Windows.Controls.**TreeView**   
 
   ```xaml
-  <Style x:Key="CTRL.TRV.MAIN.EXPLORER"/>
+  <Style TargetType="{x:Type TreeView}" x:Key="CTRL.TRV.MAIN.EXPLORER"/>
   ```
 
 ## 99. References
