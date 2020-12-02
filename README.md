@@ -70,7 +70,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
   ```
 
-* Basic ControlTemplate
+    + Basic ControlTemplate
   ```xaml
   <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
       <Setter Property="">
