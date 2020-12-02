@@ -60,12 +60,11 @@ public string Email
 
 ## 89. Resource Name
 
-### Style
-  - [x] Button : `BTN`
-  ```xaml
-  <Style x:Key="CTRL.BTN.MAIN.OK"></Style>
-  ```
-  - TextBlock : TXB
+### - [x] Button : `BTN`
+      ```xaml
+      <Style x:Key="CTRL.BTN.MAIN.OK"></Style>
+      ```
+### - [x] TextBlock : `TXB`
   - TreeView : TRV
   - TreeViewItem : TRVI
   - ListBox : LBX
