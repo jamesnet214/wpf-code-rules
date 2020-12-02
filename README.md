@@ -65,10 +65,10 @@ public string Email
   ```xaml
   <Style x:Key="CTRL.BTN.MAIN.OK"></Style>
   ```
-#### TextBlock `TXB`
-```xaml
-<Style x:Key="CTRL.TXB.MAIN.HEAder"></Style>
-```
+* System.Windows.**TextBlock** `TXB` 
+  ```xaml
+  <Style x:Key="CTRL.TXB.MAIN.HEAder"></Style>
+  ```
   - TreeView : TRV
   - TreeViewItem : TRVI
   - ListBox : LBX
