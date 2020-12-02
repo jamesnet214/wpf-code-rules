@@ -71,15 +71,15 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```
 
 ### 1.2. Basic ControlTemplate
-```xaml
-<Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
-    <Setter Property="">
-        <Setter.Value>
-            <ControlTemplate TargetType="{x:Type Button}">
-        </Setter.Value>
-    </Setter>
-</Style>
-```
+  ```xaml
+  <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
+      <Setter Property="">
+          <Setter.Value>
+              <ControlTemplate TargetType="{x:Type Button}">
+          </Setter.Value>
+      </Setter>
+  </Style>
+  ```
 
 * **TXB**, System.Windows.Controls.**TextBlock**   
 
