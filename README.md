@@ -61,10 +61,10 @@ public string Email
 ## 89. Resource Name
 
 * Style
-- Button : BTN
-- TextBlock : TXB
-- TreeView : TRV
-- TreeViewItem : TRVI
+  - Button : BTN
+  - TextBlock : TXB
+  - TreeView : TRV
+  - TreeViewItem : TRVI
 
 ## 99. References
 ### Markdown
