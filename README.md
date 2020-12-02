@@ -60,6 +60,9 @@ public string Email
 
 ## 89. Resource Name
 
+###Controls
+**CTRL**
+   
 * System.Windows.**Button** `BTN`   
 
   ```xaml
