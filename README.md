@@ -65,7 +65,8 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * ### Button   
   > *(**BTN**, System.Windows.Controls.**Button**)*   
   
-  #### Standard Button Style Declaring   
+  #### Standard Style Declaring
+  The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
   <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
   ```
