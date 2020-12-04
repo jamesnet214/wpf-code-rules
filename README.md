@@ -76,10 +76,11 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   WPF Button is a control that inherits ContentControl objects. Therefore, create a Style, including the ControlTemplate Property.
   ```xaml
   <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
-      <Setter Property="">
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Template">
           <Setter.Value>
               <ControlTemplate TargetType="{x:Type Button}">
-                  <Border>
+                  <Border Background="{TemplateParent Background}">
                       <ContentPresenter/>
                   </Border>
               </ControlTemplate>
