@@ -71,12 +71,14 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   `TBD Image...`   
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
      
-  #### - Redirected / Namespace
+  - #### Redirected / Namespace
   > *(**BTN**, System.Windows.Controls.**Button**)*   
      
-  #### - Inheritance Class Flow
+     
+  - #### Inheritance Class Flow
   > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
-  
+     
+     
   #### Style Name Declaring
   The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
@@ -105,9 +107,10 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * ### ToggleButton
   `TBD Image...`   
   TBD...
-  #### Redirected / Namespace
+  - #### Redirected / Namespace
   > *(**TGL**, System.Windows.Controls.Primitives.**ToggleButton**)*   
-  #### Inheritance Class Flow
+  
+  - #### Inheritance Class Flow
   > *ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
   #### Style Name Declaring
