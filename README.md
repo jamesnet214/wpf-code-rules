@@ -88,6 +88,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
       </Setter>
   </Style>
   ```
+  > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a Transparent. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background.
 
 * **TXB**, System.Windows.Controls.**TextBlock**   
 
