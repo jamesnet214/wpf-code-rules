@@ -113,6 +113,13 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```xaml
   <Style TargetType="{x:Type ListBoxItem}" x:Key="CTRL.LBXI.MAIN.USER"/>
   ```
+  
+* **IMG**, System.Windows.Controls.**Image**
+
+  ```xaml
+  <Style TargetType="{x:Type Image}" x:Key="CTRL.IMG.MAIN.USER"/>
+  ```
+  
 
 ## 99. References
 ### Markdown
