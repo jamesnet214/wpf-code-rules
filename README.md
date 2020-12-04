@@ -59,7 +59,7 @@ public string Email
 ```
 
 ## 89. Resource Rules
-We provide a guide to the key resources used by WPFs in as much detail as possible.
+The beauty of rules of resources is so important to WPF programs that they need to shine more than the UI design of visually visible programs. Therefore, it provides too much content and explanation We provide a guide to the key resources used by WPFs in as much detail as possible.
 ### Strong Name
 Managing resource schemes in a project is very complex and difficult. That's why it's very important to adhere to strict and strong name rules, and it's a factor that needs to be taken from beginning to end. And it will be very hard. It requires patience and patience.
 ### Do not write without rules.
