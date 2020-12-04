@@ -59,13 +59,13 @@ public string Email
 ```
 
 ## 89. Resource Rules
-The beauty of rules of resources is so important to WPF programs that they need to shine more than the UI design of visually visible programs. Therefore, it provides too much content and explanation We provide a guide to the key resources used by WPFs in as much detail as possible.
+'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
 ### Strong Name
-Managing resource schemes in a project is very complex and difficult. That's why it's very important to adhere to strict and strong name rules, and it's a factor that needs to be taken from beginning to end. And it will be very hard. It requires patience and patience.
+Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
 ### Do not write without rules.
-Temporarily creating resources is a very bad way to develop them. In the end, unmanaged resources will accumulate, which will greatly hinder readability and functionality scalability for all program logic. Therefore, even if you create resources temporarily, it is important to keep and create rules. For a moment it's annoying, but disorderly resources will continue to re-read developers until the end of the program's life cycle.
+Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
 ### 1. Controls
-Controls that inherit FrmaeworkElement define names starting with **CTRL**.
+Controls that inherit FrameworkElement define names starting with **CTRL**.
    
 * ### Button   
   `TBD Image...`   
@@ -102,7 +102,8 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
         </Setter>
     </Style>
     ```
-    > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a `Transparent`. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background. 'So I enjoy using Borders Control and Transparent Property`.
+    > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify `Transparent`. In particular, for buttons, the scope of the Input event, such as `Click`, will be determined by the presence of this Background. So I usually use Border Control and Transparent Property.
+  
   
 * ### ToggleButton
   `TBD Image...`   
@@ -110,16 +111,19 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   - #### Redirected / Namespace
   > *(**TGL**, System.Windows.Controls.Primitives.**ToggleButton**)*   
   
+  
   - #### Inheritance Class Flow
   > *ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
-  #### Style Name Declaring
+
+  - #### Style Name Declaring
   The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
   <Style TargetType="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF"/>
   ```
   
-  #### Standard Style Struct with ControlTemplate
+  
+  - #### Standard Style Struct with ControlTemplate
   TBD...
   ```xaml
   <Style Target="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF">
@@ -143,12 +147,71 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   > TBD...
   
   
+* ### TextBlock
+  `TBD Image...`   
+  TBD...
+  - #### Redirected / Namespace
+  > *(**TXB**, System.Windows.Controls.**TextBlock**)*   
   
-* **TXB**, System.Windows.Controls.**TextBlock**   
+  
+  - #### Inheritance Class Flow
+  > *TextBlock > FrameworkElement > UIElement > Visual > DependencyObject*
 
+
+  - #### Style Name Declaring
+  The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
   <Style TargetType="{x:Type TextBlock}" x:Key="CTRL.TXB.MAIN.HEADER"/>
   ```
+  
+  
+  - #### Standard Style Struct with ControlTemplate
+  TBD...
+  
+
+* ### TextBox
+  `TBD Image...`   
+  TBD...
+  - #### Redirected / Namespace
+  > *(**TXT**, System.Windows.Controls.**TextBox**)*   
+  
+  
+  - #### Inheritance Class Flow
+  > *TextBox > TextBoxBase > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+
+
+  - #### Style Name Declaring
+  The `x:Key` Property location is followed by the TargetType Property. 
+  ```xaml
+  <Style TargetType="{x:Type TextBox}" x:Key="CTRL.TXT.LOGIN.ID"/>
+  ```
+  
+  
+  - #### Standard Style Struct with ControlTemplate
+  TBD...
+  
+
+* ### CheckBox
+  `TBD Image...`   
+  TBD...
+  - #### Redirected / Namespace
+  > *(**CHK**, System.Windows.Controls.**CheckBox**)*   
+  
+  
+  - #### Inheritance Class Flow
+  > *CheckBox > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+
+
+  - #### Style Name Declaring
+  The `x:Key` Property location is followed by the TargetType Property. 
+  ```xaml
+  <Style TargetType="{x:Type TextBox}" x:Key="CTRL.CHK.LOGIN.STAY"/>
+  ```
+  
+  
+  - #### Standard Style Struct with ControlTemplate
+  TBD...
+  
   
 * **TRV**, System.Windows.Controls.**TreeView**   
 
@@ -165,7 +228,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * **LBX**, System.Windows.Controls.**ListBox**   
 
   ```xaml
-  <Style TargetType="{x:Type ListBox}" x:Key="CTRL.LBXI.MAIN.USER"/>
+  <Style TargetType="{x:Type ListBox}" x:Key="CTRL.LBX.MAIN.USER"/>
   ```
   
 * **LBXI**, System.Windows.Controls.**ListBoxItem**   
