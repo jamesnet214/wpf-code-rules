@@ -68,7 +68,9 @@ Temporarily creating resources is a very bad way to develop them. In the end, un
 Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
 * ### Button   
+  #### Redirected
   > *(**BTN**, System.Windows.Controls.**Button**)*   
+  #### Inheritance
   > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
   
   #### Style Name Declaring
