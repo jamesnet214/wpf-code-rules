@@ -105,6 +105,7 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
     > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify `Transparent`. In particular, for buttons, the scope of the Input event, such as `Click`, will be determined by the presence of this Background. So I usually use Border Control and Transparent Property.
   
   
+  
 * ### ToggleButton
   `TBD Image...`   
   TBD...
@@ -147,6 +148,7 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
   > TBD...
   
   
+  
 * ### TextBlock
   `TBD Image...`   
   TBD...
@@ -169,6 +171,7 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
   TBD...
   
 
+
 * ### TextBox
   `TBD Image...`   
   TBD...
@@ -190,6 +193,7 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
   - #### Standard Style Struct with ControlTemplate
   TBD...
   
+
 
 * ### CheckBox
   `TBD Image...`   
