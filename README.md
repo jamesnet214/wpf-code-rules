@@ -68,6 +68,7 @@ Temporarily creating resources is a very bad way to develop them. In the end, un
 Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
 * ### Button   
+  `TBD Image...`
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
   #### Redirected / Namespace
   > *(**BTN**, System.Windows.Controls.**Button**)*   
@@ -113,6 +114,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```
   
   #### Standard Style Struct with ControlTemplate
+  `TBD Image...`
   TBD...
   ```xaml
   <Style Target="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF">
