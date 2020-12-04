@@ -72,37 +72,37 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
      
   - #### Redirected / Namespace
-  > *(**BTN**, System.Windows.Controls.**Button**)*   
-     
+    > *(**BTN**, System.Windows.Controls.**Button**)*   
+    
      
   - #### Inheritance Class Flow
-  > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+    > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+    
      
-     
-  #### Style Name Declaring
-  The `x:Key` Property location is followed by the TargetType Property. 
-  ```xaml
-  <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
-  ```
+  - #### Style Name Declaring
+    The `x:Key` Property location is followed by the TargetType Property. 
+    ```xaml
+    <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
+    ```
   
 
-  #### 4. Standard Style Struct with ControlTemplate
-  WPF Button is a control that inherits ContentControl objects. Therefore, create a Style, including the ControlTemplate Property.
-  ```xaml
-  <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
-      <Setter Property="Background" Value="Transparent"/>
-      <Setter Property="Template">
-          <Setter.Value>
-              <ControlTemplate TargetType="{x:Type Button}">
-                  <Border Background="{TemplateParent Background}">
-                      <ContentPresenter ContentSource="Content"/>
-                  </Border>
-              </ControlTemplate>
-          </Setter.Value>
-      </Setter>
-  </Style>
-  ```
-  > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a `Transparent`. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background. 'So I enjoy using Borders Control and Transparent Property`.
+  - #### Standard Style Struct with ControlTemplate
+    WPF Button is a control that inherits ContentControl objects. Therefore, create a Style, including the ControlTemplate Property.
+    ```xaml
+    <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateParent Background}">
+                        <ContentPresenter ContentSource="Content"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    ```
+    > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a `Transparent`. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background. 'So I enjoy using Borders Control and Transparent Property`.
   
 * ### ToggleButton
   `TBD Image...`   
