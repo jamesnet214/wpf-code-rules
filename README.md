@@ -72,7 +72,7 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
      
   - #### Redirected / Namespace
-    > *(**BTN**, System.Windows.Controls.**Button**)*<br>     
+    > *(**BTN**, System.Windows.Controls.**Button**)*   
      
      
   - #### Inheritance Class Flow
