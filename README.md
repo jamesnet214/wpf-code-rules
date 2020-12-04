@@ -98,7 +98,45 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   </Style>
   ```
   > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a `Transparent`. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background. 'So I enjoy using Borders Control and Transparent Property`.
+  
+* ### ToggleButton
+  TBD...
+  > #### Redirected   
+  > *(**TGL**, System.Windows.Controls.Primitives.**ToggleButton**)*   
+  > #### Inheritance
+  > *ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
+  #### Style Name Declaring
+  The `x:Key` Property location is followed by the TargetType Property. 
+  ```xaml
+  <Style TargetType="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF"/>
+  ```
+  
+  #### Standard Style Struct with ControlTemplate
+  TBD...
+  ```xaml
+  <Style Target="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF">
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Template">
+          <Setter.Value>
+              <ControlTemplate TargetType="{x:Type ToggleButton}">
+                  <Border Background="{TemplateParent Background}">
+                      <ContentPresenter ContentSource="Content"/>
+                  </Border>
+                  <ControlTemplate.Triggers>
+                      <Trigger Property="IsChecked" Value="True">
+                          <Setter.Value Property="Background" Value="#EEEEEE"/>
+                      </Trigger>
+                  </ControlTemplate.Triggers>
+              </ControlTemplate>
+          </Setter.Value>
+      </Setter>
+  </Style>
+  ```
+  > TBD...
+  
+  
+  
 * **TXB**, System.Windows.Controls.**TextBlock**   
 
   ```xaml
