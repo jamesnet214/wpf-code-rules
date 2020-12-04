@@ -71,7 +71,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
   #### Redirected / Namespace
   > *(**BTN**, System.Windows.Controls.**Button**)*   
-  #### Inheritance Flow
+  #### Inheritance Class Flow
   > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
   
   #### Style Name Declaring
@@ -101,9 +101,9 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   
 * ### ToggleButton
   TBD...
-  > #### Redirected   
+  #### Redirected / Namespace
   > *(**TGL**, System.Windows.Controls.Primitives.**ToggleButton**)*   
-  > #### Inheritance
+  #### Inheritance Class Flow
   > *ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
   #### Style Name Declaring
