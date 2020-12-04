@@ -64,8 +64,8 @@ public string Email
 Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
 ### Do not write without rules.
 Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
-### 1. Controls
-    Controls that inherit FrameworkElement define names starting with **CTRL**.
+1. ### Controls
+   Controls that inherit FrameworkElement define names starting with **CTRL**.
    
 * ### Button   
   `TBD Image...`   
@@ -124,7 +124,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
     ```
   
   
-    - #### Standard Style Struct with ControlTemplate
+  - #### Standard Style Struct with ControlTemplate
     TBD...
     ```xaml
     <Style Target="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF">
