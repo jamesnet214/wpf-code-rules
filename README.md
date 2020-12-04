@@ -69,7 +69,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
 * ### Button   
   > *(**BTN**, System.Windows.Controls.**Button**)*   
-  > Button > ButtonBase ... > ContentControl ... > FrameworkElement
+  > Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject
   
   #### Style Name Declaring
   The `x:Key` Property location is followed by the TargetType Property. 
