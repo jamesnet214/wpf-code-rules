@@ -62,7 +62,8 @@ public string Email
 
 ### Strong Name
 Managing resource schemes in a project is very complex and difficult. That's why it's very important to adhere to strict and strong name rules, and it's a factor that needs to be taken from beginning to end. And it will be very hard. It requires patience and patience.
-
+### Do not write without rules.
+Temporarily creating resources is a very bad way to develop them. In the end, unmanaged resources will accumulate, which will greatly hinder readability and functionality scalability for all program logic. Therefore, even if you create resources temporarily, it is important to keep and create rules. For a moment it's annoying, but disorderly resources will continue to re-read developers until the end of the program's life cycle.
 ### 1. Controls
 Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
