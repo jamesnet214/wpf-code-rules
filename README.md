@@ -65,14 +65,15 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * ### Button   
   > *(**BTN**, System.Windows.Controls.**Button**)*   
   
-  #### Standard Style Declaring
+  #### Style Name Declaring
   The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
   <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
   ```
   
 
-  #### Standard ControlTemplate Struct
+  #### Standard Style Struct with ControlTemplate
+  WPF Button is the control that inherits ContentControl. Therefore, you must make ControlTemplate.
   ```xaml
   <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
       <Setter Property="">
