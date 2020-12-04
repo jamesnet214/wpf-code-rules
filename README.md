@@ -68,7 +68,7 @@ Temporarily creating resources is a very bad way to develop them. In the end, un
 Controls that inherit FrmaeworkElement define names starting with **CTRL**.
    
 * ### Button   
-  `TBD Image...`
+  `TBD Image...`   
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
   #### Redirected / Namespace
   > *(**BTN**, System.Windows.Controls.**Button**)*   
@@ -101,6 +101,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   > It is very important to specify the background of the control next to ControlTemplate. If you don't have a color to define, make sure to specify a `Transparent`. In particular, for buttons, the scope of the Input event, such as clicking, will be determined by the presence of this Background. 'So I enjoy using Borders Control and Transparent Property`.
   
 * ### ToggleButton
+  `TBD Image...`   
   TBD...
   #### Redirected / Namespace
   > *(**TGL**, System.Windows.Controls.Primitives.**ToggleButton**)*   
@@ -114,7 +115,6 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```
   
   #### Standard Style Struct with ControlTemplate
-  `TBD Image...`
   TBD...
   ```xaml
   <Style Target="{x:Type ToggleButton}" x:Key="CTRL.TGL.ACCOUNT.ON.OFF">
