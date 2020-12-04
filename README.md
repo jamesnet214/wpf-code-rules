@@ -71,7 +71,7 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
   ```
   
 
-  #### Standard ControlTemplate
+  #### Standard ControlTemplate Struct
   ```xaml
   <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
       <Setter Property="">
