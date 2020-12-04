@@ -70,19 +70,19 @@ Controls that inherit FrmaeworkElement define names starting with **CTRL**.
 * ### Button   
   `TBD Image...`   
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
-  #### Redirected / Namespace
+  #### 1. Redirected / Namespace
   > *(**BTN**, System.Windows.Controls.**Button**)*   
-  #### Inheritance Class Flow
+  #### 2. Inheritance Class Flow
   > *Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
   
-  #### Style Name Declaring
+  #### 3. Style Name Declaring
   The `x:Key` Property location is followed by the TargetType Property. 
   ```xaml
   <Style TargetType="{x:Type Button}" x:Key="CTRL.BTN.MAIN.OK"/>
   ```
   
 
-  #### Standard Style Struct with ControlTemplate
+  #### 4. Standard Style Struct with ControlTemplate
   WPF Button is a control that inherits ContentControl objects. Therefore, create a Style, including the ControlTemplate Property.
   ```xaml
   <Style Target="{x:Type Button}" x:Key="CTRL.BTN.MAIN.SIGNIN">
