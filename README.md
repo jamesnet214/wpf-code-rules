@@ -151,7 +151,23 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 * ### RadioButton
   `TBD Image...`   
   TBD...
+- #### Redirected / Namespace
+    > *(**RDO**, System.Windows.Controls.**RadioButton**)*   
+  
+  
+  - #### Inheritance Class Flow
+    > *RadioButton > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
+
+  - #### Style Name Declaring
+    The `x:Key` Property location is followed by the TargetType Property. 
+    ```xaml
+    <Style TargetType="{x:Type RadioButton}" x:Key="CTRL.RDO.MAIN.HEADER"/>
+    ```
+  
+  
+  - #### Standard Style Struct with ControlTemplate
+    TBD...
 
   
 * ### TextBlock
