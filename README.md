@@ -59,6 +59,9 @@ public string Email
 ```
 
 ## 79. Bad Bindings
+You can learn this technique in more detail here. [WPF Bindings](https://github.com/ncoresoftsource/wpfxamlbinding)
+
+
 This is the Binding method that can be used in WPF.   
 
 - Binding
