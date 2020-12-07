@@ -65,7 +65,7 @@ Managing the resource system in a project is very complex and difficult. So, it 
 #### Do not write without rules.
 Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
 ### Resource Types
-Controls that inherit FrameworkElement define names starting with **CTRL**.   
+
 - Controls
   - ContentControl
     - Button
@@ -73,15 +73,14 @@ Controls that inherit FrameworkElement define names starting with **CTRL**.
   - ItemsControl
     - ListBox (with ListBoxItem)
     - TreeView (with TreeViewItem)
-  - Design
-    - SolidBrush
-    - Path
-    - Drawing
-        
-* ### ContentControl
+- Design
+  - SolidBrush
+  - Path
+  - Drawing
 
 * * *
-
+### ContentControl
+ContentControl that inherit FrameworkElement define names starting with **CTRL**.   
 * ### Button   
   `TBD Image...`   
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
