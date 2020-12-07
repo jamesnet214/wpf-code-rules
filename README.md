@@ -67,8 +67,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 ### Controls
 Controls that inherit FrameworkElement define names starting with **CTRL**.   
 
-### ContentControl 
-    ---------------
+## * ContentControl 
 
 * #### Button   
   `TBD Image...`   
