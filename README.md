@@ -85,9 +85,9 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   - Path
   - Drawing   
   
-* The reason for the detailed classification of styles.
-  These are the reasons why WPF controls are further divided according to inherited parent classes, and style name rules are further classified:   
-  > If WPF properties are applied directly from the screen under development, we can no longer expect source code readability, simplicity, and quality. This is why style rules and names should be designed to be intuitive and to infer function and intent.
+* ### The reason for the detailed classification of styles.   
+  #### These are the reasons why WPF controls are further divided according to inherited parent classes, and style name rules are further classified:   
+  If WPF properties are applied directly from the screen under development, we can no longer expect source code readability, simplicity, and quality. This is why style rules and names should be designed to be intuitive and to infer function and intent.
 * * *
 ### ContentControl
 ContentControl that inherit FrameworkElement define names starting with **CTRL**.   
