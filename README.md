@@ -58,6 +58,29 @@ public string Email
 #endregion
 ```
 
+## 79. Binding Rules
+This is the Binding method that can be used in WPF.   
+
+- Binding
+- Element
+- TemplateParent
+- Self
+- TemplatedParent
+- AcensorType
+
+### Binding
+TBD...
+### Element
+TBD...
+### TemplateParent
+TBD...
+### Self
+TBD...
+### TemplatedParent
+TBD...
+### AcensorType
+TBD...
+
 ## 89. Resource Rules
 > 'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
 #### Strong Name
