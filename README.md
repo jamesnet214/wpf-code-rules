@@ -66,7 +66,7 @@ Managing the resource system in a project is very complex and difficult. So, it 
 Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
 ### Resource Types
 
-- Visual (Controls)
+- #### Visual (Controls)
   - ContentControl
     - Button
     - ToggleButton
@@ -85,8 +85,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   - Path
   - Drawing   
   
-* ### The reason for the detailed classification of styles.   
-  #### These are the reasons why WPF controls are further divided according to inherited parent classes, and style name rules are further classified:   
+* #### The reason for the detailed classification of styles.   
   If WPF properties are applied directly from the screen under development, we can no longer expect source code readability, simplicity, and quality. This is why style rules and names should be designed to be intuitive and to infer function and intent.
 * * *
 ### ContentControl
