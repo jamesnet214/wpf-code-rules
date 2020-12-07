@@ -58,7 +58,7 @@ public string Email
 #endregion
 ```
 
-## 79. Binding Rules
+## 79. Bad Bindings
 This is the Binding method that can be used in WPF.   
 
 - Binding
