@@ -73,7 +73,6 @@ Temporarily creating resource without rules is a very bad way to develop them. T
       - ToggleButton
       - RadioButton
       - CheckBox
-      - TextBox
     - Control
       - TextBox
     - FrameworkElement
@@ -87,7 +86,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
     - Drawing   
   
 * #### The reason for the detailed classification of styles.   
-  If WPF properties are applied directly from the screen under development, we can no longer expect source code readability, simplicity, and quality. This is why style rules and names should be designed to be intuitive and to infer function and intent.
+  If WPF properties are applied directly from the screen under development, source code readability, simplicity and quality can no longer be expected. Therefore, style rules and names should be intuitive and designed to infer functions and intentions.
 * * *
 ### ContentControl
 ContentControl that inherit FrameworkElement define names starting with **CTRL**.   
@@ -291,7 +290,7 @@ TBD...
 
   - #### Standard Style Struct with ControlTemplate
     ```xaml
-    <Style TargetType="{x:Type TreeViewItem}" x:Key="CTRL.TRVI.MAIN>EXPLORER">
+    <Style TargetType="{x:Type TreeViewItem}" x:Key="CTRL.TRVI.MAIN.EXPLORER">
        <!--- ??? --->
     </Style>
 
@@ -304,7 +303,7 @@ TBD...
         </Setter>
     </Style>
     ```
-    > What's unique here is that TreeView does not include ItemsPresenter in the Template, even though it inherits ItemsControl. This is an exceptional structure that the ItemsPresenter is included in TreeViewItem because the data collection representation is Hierarchy unlike other list-type controls.
+    > What's unique here is that TreeView does not include ItemsPresenter in the Template, even though it inherits ItemsControl. This is an exceptional structure that the ItemsPresenter is included in TreeViewItem. Because, unlike other list-type controls, the data collection representation is hierarchy.
 
 
 
