@@ -271,7 +271,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
         </Setter>
     </Style>
     ```
-  
+    > What's unique here is that TreeView does not include ItemsPresenter in the Template, even though it inherits ItemsControl. This is an exceptional structure that the ItemsPresenter is included in TreeViewItem because the data collection representation is Hierarchy unlike other list-type controls.
   
   
 TBD...
