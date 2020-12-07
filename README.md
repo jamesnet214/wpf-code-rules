@@ -70,6 +70,13 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   - ContentControl
     - Button
     - ToggleButton
+    - RadioButton
+    - CheckBox
+    - TextBox
+  - Control
+    - TextBox
+  - FrameworkElement
+    - TextBlock
   - ItemsControl
     - ListBox (with ListBoxItem)
     - TreeView (with TreeViewItem)
