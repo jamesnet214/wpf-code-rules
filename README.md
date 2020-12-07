@@ -217,6 +217,9 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
     TBD...
 
 
+### FrameworkElement
+TBD...
+
 * #### TextBlock
   `TBD Image...`   
   TBD...
@@ -239,6 +242,8 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
     TBD...
 
 
+### Control
+TBD...
 
 * #### TextBox
   `TBD Image...`   
@@ -261,6 +266,10 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
   - #### Standard Style Struct with ControlTemplate
     TBD...
 
+
+
+### ItemsControl
+TBD...
 
 * #### TreeView
   `TBD Image...`   
@@ -297,31 +306,6 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
     ```
     > What's unique here is that TreeView does not include ItemsPresenter in the Template, even though it inherits ItemsControl. This is an exceptional structure that the ItemsPresenter is included in TreeViewItem because the data collection representation is Hierarchy unlike other list-type controls.
 
-
-TBD...
-* **TRVI**, System.Windows.Controls.**TreeViewItem**   
-
-  ```xaml
-  <Style TargetType="{x:Type TreeViewItem}" x:Key="CTRL.TRVI.MAIN.EXPLORER"/>
-  ```
-
-* **LBX**, System.Windows.Controls.**ListBox**   
-
-  ```xaml
-  <Style TargetType="{x:Type ListBox}" x:Key="CTRL.LBX.MAIN.USER"/>
-  ```
-
-* **LBXI**, System.Windows.Controls.**ListBoxItem**   
-
-  ```xaml
-  <Style TargetType="{x:Type ListBoxItem}" x:Key="CTRL.LBXI.MAIN.USER"/>
-  ```
-
-* **IMG**, System.Windows.Controls.**Image**
-
-  ```xaml
-  <Style TargetType="{x:Type Image}" x:Key="CTRL.IMG.MAIN.USER"/>
-  ```
 
 
 ## 99. References
