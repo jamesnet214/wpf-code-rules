@@ -80,7 +80,8 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     ```xaml
     <TextBox x:Name="text" Text="{Binding UserName}"/>
     ...
-    ***<TextBlock Text="{Binding ElementName=text, Path=Text}"/>***    
+    <!-- Never using -->
+    <TextBlock Text="{Binding ElementName=text, Path=Text}"/>
     ```
   - ##### {RelativeSource Self}를 사용하여 계층 구조 형태로 Binding을 접근할 수 있는 상황에서 사용하지 마라.
     TBD...
