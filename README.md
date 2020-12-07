@@ -168,6 +168,29 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   
   - #### Standard Style Struct with ControlTemplate
     TBD...
+  
+
+
+* ### CheckBox
+  `TBD Image...`   
+  TBD...
+  - #### Redirected / Namespace
+    > *(**CHK**, System.Windows.Controls.**CheckBox**)*   
+  
+  
+  - #### Inheritance Class Flow
+    > *CheckBox > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+
+
+  - #### Style Name Declaring
+    The `x:Key` Property location is followed by the TargetType Property. 
+    ```xaml
+    <Style TargetType="{x:Type TextBox}" x:Key="CTRL.CHK.LOGIN.STAY"/>
+    ```
+  
+  
+  - #### Standard Style Struct with ControlTemplate
+    TBD...
 
   
 * ### TextBlock
@@ -213,37 +236,45 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   
   - #### Standard Style Struct with ControlTemplate
     TBD...
-  
-
-
-* ### CheckBox
+    
+    
+* ### TreeView
   `TBD Image...`   
   TBD...
   - #### Redirected / Namespace
-    > *(**CHK**, System.Windows.Controls.**CheckBox**)*   
+    > *(**TRV**, System.Windows.Controls.**TreeView**)*   
   
   
   - #### Inheritance Class Flow
-    > *CheckBox > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
+    > *TreeView > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject*
 
 
   - #### Style Name Declaring
     The `x:Key` Property location is followed by the TargetType Property. 
     ```xaml
-    <Style TargetType="{x:Type TextBox}" x:Key="CTRL.CHK.LOGIN.STAY"/>
+    <Style TargetType="{x:Type TreeView}" x:Key="CTRL.TRV.MAIN.EXPLORER"/>
     ```
   
   
   - #### Standard Style Struct with ControlTemplate
-    TBD...
+    ```xaml
+    <Style TargetType="{x:Type TreeViewItem}" x:Key="CTRL.TRVI.MAIN>EXPLORER">
+       <!--- ??? --->
+    </Style>
+    
+    <Style TargetType="{x:Type TreeView}" x:Key="CTRL.TRV.MAIN.EXPLORER">
+        <Setter Property="ItemContainerStyle" Value="CTRL.TRVI.MAIN.EXPLORER"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate/>
+            <Setter.Value>
+        </Setter>
+    </Style>
+    ```
   
   
-* **TRV**, System.Windows.Controls.**TreeView**   
-
-  ```xaml
-  <Style TargetType="{x:Type TreeView}" x:Key="CTRL.TRV.MAIN.EXPLORER"/>
-  ```
   
+TBD...
 * **TRVI**, System.Windows.Controls.**TreeViewItem**   
 
   ```xaml
