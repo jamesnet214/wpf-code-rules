@@ -66,7 +66,8 @@ Managing the resource system in a project is very complex and difficult. So, it 
 Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
 ### Resource Types
 
-- #### Visual (Controls)
+- #### Style Classification Tree Structure
+- Visual
   - ContentControl
     - Button
     - ToggleButton
