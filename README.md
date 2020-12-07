@@ -72,12 +72,12 @@ This is the Binding method that can be used in WPF.
 TBD...
 ### ElementName
 Element Binding is a simple and easy-to-use Binding method. That is why this method is often overissued, affecting development pattern flow and readability.
-  #### a bad example
-    ```xaml
-    <TextBox x:Name="text"/>
-    ...
-    </TextBlock Text="{Binding ElementName=text, Path=Text"/>
-    ```
+#### a bad example
+```xaml
+<TextBox x:Name="text"/>
+...
+</TextBlock Text="{Binding ElementName=text, Path=Text"/>
+```
 TBD...
 ### TemplateParent
 TBD...
