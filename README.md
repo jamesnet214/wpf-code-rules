@@ -73,8 +73,8 @@ TBD...
 ### ElementName
 TBD...
 Element Binding is a simple and easy-to-use Binding method. That is why this method is often overissued, affecting development pattern flow and readability.
-- #### a bad example   
-  > ElementBinding can be used flexibly in various situations. However, it is not recommended to use it in the following situations.
+- #### A bad example   
+  ElementBinding can be used flexibly in various situations. However, it is not recommended to use it in the following situations.
   - ##### Do not use Bindings that exist in DataContext again through ElementBinding.
     > Using ElementBinding through connected control rather than using the Properties already declared in ViewModel is not a functional problem, but it breaks the fundamental pattern of Binding.
     ```xaml
