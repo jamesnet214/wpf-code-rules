@@ -67,24 +67,24 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 ### Resource Types
 
 - #### Style Classification Tree Structure
-- Visual
-  - ContentControl
-    - Button
-    - ToggleButton
-    - RadioButton
-    - CheckBox
-    - TextBox
-  - Control
-    - TextBox
-  - FrameworkElement
-    - TextBlock
-  - ItemsControl
-    - ListBox (with ListBoxItem)
-    - TreeView (with TreeViewItem)
-- Design
-  - SolidBrush
-  - Path
-  - Drawing   
+  - Visual
+    - ContentControl
+      - Button
+      - ToggleButton
+      - RadioButton
+      - CheckBox
+      - TextBox
+    - Control
+      - TextBox
+    - FrameworkElement
+      - TextBlock
+    - ItemsControl
+      - ListBox (with ListBoxItem)
+      - TreeView (with TreeViewItem)
+  - Design
+    - SolidBrush
+    - Path
+    - Drawing   
   
 * #### The reason for the detailed classification of styles.   
   If WPF properties are applied directly from the screen under development, we can no longer expect source code readability, simplicity, and quality. This is why style rules and names should be designed to be intuitive and to infer function and intent.
