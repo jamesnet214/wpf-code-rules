@@ -67,7 +67,10 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 ### Controls
 Controls that inherit FrameworkElement define names starting with **CTRL**.   
 
-* #### Button   
+### ContentControl
+------
+
+* ### Button   
   `TBD Image...`   
   Button controls are the most representative objects that use ControlTemplate simply and concisely.
 
