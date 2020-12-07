@@ -59,16 +59,16 @@ public string Email
 ```
 
 ## 89. Resource Rules
-'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
-### Strong Name
+> 'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
+#### Strong Name
 Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
-### Do not write without rules.
+#### Do not write without rules.
 Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly hindering the readability and functional scalability of all program logic. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
-### Controls
+#### Controls
 Controls that inherit FrameworkElement define names starting with **CTRL**.   
 
 ### ContentControl
-------
+* * *
 
 * ### Button   
   `TBD Image...`   
