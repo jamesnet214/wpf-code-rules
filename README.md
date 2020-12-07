@@ -62,7 +62,7 @@ public string Email
 This is the Binding method that can be used in WPF.   
 
 - Binding
-- Element
+- ElementName
 - TemplateParent
 - Self
 - TemplatedParent
@@ -70,7 +70,14 @@ This is the Binding method that can be used in WPF.
 
 ### Binding
 TBD...
-### Element
+### ElementName
+Element Binding is a simple and easy-to-use Binding method. That is why this method is often overissued, affecting development pattern flow and readability.
+  #### a bad example
+    ```xaml
+    <TextBox x:Name="text"/>
+    ...
+    </TextBlock Text="{Binding ElementName=text, Path=Text"/>
+    ```
 TBD...
 ### TemplateParent
 TBD...
