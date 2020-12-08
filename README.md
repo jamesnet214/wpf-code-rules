@@ -87,7 +87,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     <TextBlock Text="{Binding ElementName=text, Path=Text}"/>
     ```
     
-    **Good**
+    **Good**   
     remove -> `x:Name="text"`
     ```xaml
     <!-- remove -> x:Name="text" -->
@@ -103,7 +103,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
         ...
     ```
     
-    **Good**
+    **Good**   
     remove -> `x:Name="win"`
     ```xaml
     <Window>
@@ -111,8 +111,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
         ...
     ```
     
-    **Better Good**
-    remove -> `x:Name="win"`
+    **Better Good**   
     ```xaml
     <Window>
         <TextBlock DataContext="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext}" Text="{Binding UserName"/>
