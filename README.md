@@ -88,14 +88,36 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     ```
     
     **Good**
+    remove -> `x:Name="text"`
     ```xaml
-    <!-- remove x:Name="text" -->
+    <!-- remove -> x:Name="text" -->
     <TextBox Text="{Binding UserName}"/>
     ...
     <TextBlock Text="{Binding UserName}"/>
     ```
-  - ##### {RelativeSource Self}를 사용하여 계층 구조 형태로 Binding을 접근할 수 있는 상황에서 사용하지 마라.
-    TBD...
+  - ##### {RelativeSource Self}를 사용하여 계층 구조 형태로 Binding을 접근할 수 있는 상황에서 사용하지 마라.   
+    **Bad**
+    ```xaml
+    <Window x:Name="win">
+        <TextBlock Text="{Binding ElementName=win, Path=DataContext.UserName}"/>
+        ...
+    ```
+    
+    **Good**
+    remove -> `x:Name="win"`
+    ```xaml
+    <Window>
+        <TextBlock Text="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext.UserName}"/>
+        ...
+    ```
+    
+    **Better Good**
+    remove -> `x:Name="win"`
+    ```xaml
+    <Window>
+        <TextBlock DataContext="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext}" Text="{Binding UserName"/>
+        ...
+    ```
   - ##### 계층구조 흐름을 거스르는 상황에서 ElementName을 사용하지 마라.
     TBD...
 
