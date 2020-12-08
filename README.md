@@ -115,11 +115,11 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
       ```
   - ##### 자신의 속성을 사용할 때 Element Binding을 사용하지 마라
     - ##### Bad
-      ```
+      ```xaml
       <TextBlock x:Name="txt" Text="{Binding ElementName=txt, Path=Foreground}"/>
       ```
     - ##### Good
-      ```
+      ```xaml
       <TextBlock Text="{Binding RelativeSource={RelativeSource Self}, Path=Foreground}"/>
       ```
   
