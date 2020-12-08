@@ -86,7 +86,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     ...
     <TextBlock Text="{Binding ElementName=text, Path=Text}"/>
     ```
-    If UserName Property is included in DataContext, you do not need to use Element-Binding Property.
+    If UserName Property is included in DataContext, you do not need to use Element-Binding Property.   
     **Good**   
     remove -> `x:Name="text"`
     ```xaml
