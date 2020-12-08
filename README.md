@@ -100,7 +100,6 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     ```xaml
     <Window x:Name="win">
         <TextBlock Text="{Binding ElementName=win, Path=DataContext.UserName}"/>
-        ...
     ```
     
     **Good**   
@@ -108,14 +107,14 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
     ```xaml
     <Window>
         <TextBlock Text="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext.UserName}"/>
-        ...
     ```
     
     **Better Good**   
     ```xaml
     <Window>
-        <TextBlock DataContext="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext}" Text="{Binding UserName"/>
-        ...
+        <TextBlock DataContext="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext}" 
+                   Text="{Binding UserName}"
+                   ToolTip="{Binding Emaill}"/>
     ```
   - ##### 계층구조 흐름을 거스르는 상황에서 ElementName을 사용하지 마라.
     TBD...
