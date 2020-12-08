@@ -93,7 +93,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
       ...
       <TextBlock Text="{Binding UserName}"/>
       ```
-  - ##### {RelativeSource Self}를 사용하여 계층 구조 형태로 Binding을 접근할 수 있는 상황에서 사용하지 마라.   
+  - ##### 상위(계층) 컨트롤 속성을 사용할 때 Element Binding을 사용하지 마라.   
     - ##### Bad
       ```xaml
       <Window x:Name="win">
@@ -113,6 +113,16 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
                      Text="{Binding UserName}"
                      ToolTip="{Binding Emaill}"/>
       ```
+  - ##### 자신의 속성을 사용할 때 Element Binding을 사용하지 마라
+    - ##### Bad
+      ```
+      <TextBlock x:Name="txt" Text="{Binding ElementName=txt, Path=Foreground}"/>
+      ```
+    - ##### Good
+      ```
+      <TextBlock Text="{Binding RelativeSource={RelativeSource Self}, Path=Foreground}"/>
+      ```
+  
   - ##### 계층구조 흐름을 거스르는 상황에서 ElementName을 사용하지 마라.
     TBD...
 
