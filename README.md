@@ -79,11 +79,18 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
   ElementBinding can be used flexibly in various situations. However, it is not recommended to use it in the following situations.
   - ##### Do not use Bindings that exist in DataContext again through ElementBinding.
     > Using ElementBinding through connected control rather than using the Properties already declared in ViewModel is not a functional problem, but it breaks the fundamental pattern of Binding.
+    ``Bad``
     ```xaml
     <TextBox x:Name="text" Text="{Binding UserName}"/>
     ...
-    <!-- Never using -->
     <TextBlock Text="{Binding ElementName=text, Path=Text}"/>
+    ```
+    ``Good``
+    ```
+    <!-- remove x:Name="text" -->
+    <TextBox Text="{Binding UserName}"/>
+    ...
+    <TextBlock Text="{Binding UserName}"/>
     ```
   - ##### {RelativeSource Self}를 사용하여 계층 구조 형태로 Binding을 접근할 수 있는 상황에서 사용하지 마라.
     TBD...
