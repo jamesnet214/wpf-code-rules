@@ -86,7 +86,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
       ...
       <TextBlock Text="{Binding ElementName=text, Path=Text}"/>
       ```
-      > If UserName Property is included in DataContext, you do not need to use Element-Binding Property.   
+      > If 'UserName' Property is included in DataContext, you don't have to use Element-Binding Property.   
     - ##### Good
       ```xaml
       <TextBox Text="{Binding UserName}"/>
@@ -106,7 +106,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
           <TextBlock Text="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext.UserName}"/>
       ```
       
-    - ##### Better Good
+    - ##### Better
       ```xaml
       <Window>
           <TextBlock DataContext="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext}" 
