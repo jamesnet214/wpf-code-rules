@@ -66,6 +66,12 @@ public string Email
   > 순서는 크게 상관이 없지만 각각의 체크항목의 개연성을 고려하여 순서가 정의되어 있습니다.   
   - #### View using 선언 확인   
     사용하지 않는 선언은 제거하도록 합니다.
+    ### 예를들어:
+    ```xaml
+    <UserControl x:Class="TestProject.Views.TestUserControl1"
+                 xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
+                 ...
+    </UserControl>
   - #### 연결된 Resource 확인   
     화면 전용 스타일 리소스 위치를 확인하고 `App.xaml`에 제대로 선언되어 있는지 확인합니다.
   - #### 각 컨트롤 Style 분류   
