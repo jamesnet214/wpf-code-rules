@@ -39,7 +39,7 @@ private string _email;
 public string Email 
 { 
     get { return _email; } 
-    set { _email = value; Something(); OnPropertyChanged(); } 
+    set { _email = value; OnPropertyChanged(); } 
 }
 ```
 
@@ -53,7 +53,7 @@ private string _email;
 public string Email
 {
     get { return _email; }
-    set { _email = value; OnPropertyChanged(); }
+    set { _email = value; OnPropertyChanged(); EmailChanged(value); }
 }
 #endregion
 ```
@@ -84,16 +84,7 @@ public string Email
 ### 
 
 ## 79. Bad Bindings
-This is the Binding method that can be used in WPF.   
-
-- Binding
-- ElementName
-- TemplateParent
-- Self
-- TemplatedParent
-- AcensorType
-
-> You can learn this technique in more detail here. [WPF Bindings](https://github.com/ncoresoftsource/wpfxamlbinding)
+> We recommend you to read this article first. [WPF Bindings](https://github.com/ncoresoftsource/wpfxamlbinding)
 
 ### Binding
 TBD...
