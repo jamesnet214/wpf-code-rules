@@ -68,7 +68,7 @@ public string Email
   - 연결된 Resource 확인
     화면 전용 스타일 리소스 위치를 확인하고 `App.xaml`에 제대로 선언되어 있는지 확인합니다.
   - 각 컨트롤 Style 분류
-  - 무분별한 x:Name 선언 제거
+  - 무분별하게 남발된 `x:Name` 선언 부분 제거
   
 ### 
 
