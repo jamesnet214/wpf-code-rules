@@ -58,6 +58,20 @@ public string Email
 #endregion
 ```
 
+## 19. 단위 별 코드 품질 점검
+프로젝트의 코드 품질을 점검하는 방법입니다.
+### View 단위별 체크
+코드 품질 점검을 화면(View) 단위로 점검합니다.
+- 코드 질 점검을 위한 세부 체크사항은 다음과 같습니다.
+  - View using 선언 확인
+    사용하지 않는 선언은 제거하도록 합니다.
+  - 연결된 Resource 확인
+    화면 전용 스타일 리소스 위치를 확인하고 App.xaml에 제대로 선언되어 있는지 확인합니다.
+  - 각 컨트롤 Style 분류
+  - 무분별한 x:Name 선언 제거
+  
+### 
+
 ## 79. Bad Bindings
 This is the Binding method that can be used in WPF.   
 
