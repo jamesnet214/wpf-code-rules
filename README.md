@@ -72,6 +72,7 @@ public string Email
                  xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
                  ...
     </UserControl>
+    ```
     `xmlns:local' 선언을 실제 UserControl 영역에서 사용하고 있지 않는다면 제거합니다. 그리고 향후 필요하다 하더라도 제거 후 나중에 추가하도록 합니다.
   - #### 연결된 Resource 확인   
     화면 전용 스타일 리소스 위치를 확인하고 `App.xaml`에 제대로 선언되어 있는지 확인합니다.
