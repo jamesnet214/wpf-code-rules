@@ -59,18 +59,19 @@ public string Email
 ```
 ## 9. Try & Catch
 TBD...
-기본적으로 TryCatch는 사용하지 않습니다.
-### Try Catch를 지양해야 하는 이유:   
-> TryCatch 구간에서는 기본적으로 에러를 프로그램 동작 주기에 반영되지 않고 그냥 지나치게 때문에, 애플리케이션 흐름에 문제가 발생하게 됩니다. 이를 방지하기 위해서는 개발 단계에서부터 Try Catch를 사용하지 않는 것이 좋은 방법입니다.   
+Try Catch is generally not recommended.
+### Why should we avoid using Try Catch?  
+> Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
 
-> 특히 `.Xaml`과 `.cs` 그리고 `resource` 영역까지 유기적인 흐름을 유지하며 동작하는 WPF 애플리케이션의 경우 개발 단계에서 더욱이 TryCatch를 사용하지 않는 것이 유리합니다.
-### Try Catch를 사용해야 하는 상황:
-> - 성공과 실패의 여부를 TryCatch를 통해 확인해야 하는 경우
->   1. 로컬 파일 Access
->   2. 크롤링
->   3. API
->   4. 외부 접속 등
-> - while문을 함께 사용하여 TryCatch 구간 동작의 재반복을 유도하고 사용자가 제어할 수 있도록 하는 방식의 코드를 지향합니다.
+> Especially, WPF applications that maintain organic flow to '`.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
+
+### Situation that Try Catch should be used:
+> - When you need to check the success of the action through Try Catch.
+>   - Local File Access
+>   - Crawling
+>   - API
+>   - External Connection (and more...)
+> - It is recommended that you use a combination of 'While' statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 
 
 ## 19. 단위 별 코드 품질 점검
