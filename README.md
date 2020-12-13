@@ -66,12 +66,12 @@ Try Catch is generally not recommended.
 > Especially, WPF applications that maintain organic flow to '`.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
 
 ### Situation that Try Catch should be used:
-> - When you need to check the success of the action through Try Catch.
->   - Local File Access
->   - Crawling
->   - API
->   - External Connection (and more...)
-> - It is recommended that you use a combination of 'While' statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
+> When you need to check the success of the action through Try Catch.
+> - Local File Access
+> - Crawling
+> - API
+> - External Connection (and more...)
+> It is recommended that you use a combination of 'While' statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 
 
 ## 19. 단위 별 코드 품질 점검
