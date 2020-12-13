@@ -70,7 +70,8 @@ Try Catch is generally not recommended.
 > - Local File Access
 > - Crawling
 > - API
-> - External Connection (and more...) <br>
+> - External Connection (and more...)
+
 > It is recommended that you use a combination of 'While' statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 
 
