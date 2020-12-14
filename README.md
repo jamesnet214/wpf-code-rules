@@ -57,7 +57,7 @@ public string Email
 }
 #endregion
 ```
-## 9. Try & Catch
+## 9. Try Catch
 TBD...
 Try Catch is generally not recommended.
 ### Why should we avoid using Try Catch?  
