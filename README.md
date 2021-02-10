@@ -320,7 +320,7 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
 
 * #### CheckBox
   `TBD Image...`   
-  TBD...
+  TBD....
   - #### Redirected / Namespace
     > *(**CHK**, System.Windows.Controls.**CheckBox**)*   
 
