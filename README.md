@@ -58,7 +58,7 @@ public string Email
 #endregion
 ```
 ## 9. Try Catch
-TBD...
+TBD....
 Try Catch is generally not recommended.
 ### Why should we avoid using Try Catch?  
 > Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
