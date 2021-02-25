@@ -387,9 +387,7 @@ TBD...
 
 
   - #### Standard Style Struct with ControlTemplate
-    TBD...
-
-
+    TBD..
 
 ### ItemsControl
 TBD.....
