@@ -178,7 +178,7 @@ TBD...
 TBD...
 ### TemplatedParent
 TBD...
-### AcensorType
+### AncestorType
 TBD...(Parent DataContext)
 TBD...
 
@@ -207,6 +207,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
   - Design
     - SolidBrush
     - Path
+    - Geometry
     - Drawing   
   
 * #### The reason for the detailed classification of styles.   
