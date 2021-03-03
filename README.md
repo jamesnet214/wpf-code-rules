@@ -170,7 +170,7 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
       ```
   
   - ##### 계층구조 흐름을 거스르는 상황에서 ElementName을 사용하지 마라.
-    TBD...
+    TBD..
 
 ### TemplateParent
 TBD...
@@ -298,7 +298,7 @@ ContentControl that inherit FrameworkElement define names starting with **CTRL**
 
 * #### RadioButton
   `TBD Image...`   
-  TBD...
+  TBD..
   - #### Redirected / Namespace
     > *(**RDO**, System.Windows.Controls.**RadioButton**)*   
 
