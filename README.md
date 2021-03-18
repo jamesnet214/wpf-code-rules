@@ -1,4 +1,4 @@
-# wpfcoderules
+# wpf-code-rules
 
 ## Get Started
 ## Overview
