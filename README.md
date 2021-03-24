@@ -1,5 +1,11 @@
 # wpf-code-rules
 
+## WPF Core DLLs
+- System.Xaml
+- WindowsBase
+- PresentationCore
+- PresentationFramework
+
 ## Get Started
 ## Overview
 1. Property
