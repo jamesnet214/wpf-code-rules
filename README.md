@@ -153,11 +153,10 @@ Element Binding is a simple and easy-to-use Binding method. That is why this met
       ```
     
     - ##### Good
-      ```xaml
+      `xaml
       <Window>
           <TextBlock Text="{Binding RelativeSource={RelativeSource AcensorType=Window}, Path=DataContext.UserName}"/>
-      ```
-      
+      `      
     - ##### Better
       ```xaml
       <Window>
