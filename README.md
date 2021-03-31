@@ -188,6 +188,4 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 <br />
 
 ## 99. References
-### Markdown
-[Temp Link](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
-TBD....
+[the-easiest-markdown](https://github.com/devncore/the-easiest-markdown)
