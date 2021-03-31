@@ -97,38 +97,30 @@ When you need to check __the success of the action__ through Try Catch.
 
 ### 4. Code Quality Check
 
-#### View 단위별 체크
-코드 품질 점검을 화면(View) 단위로 점검합니다.
-- #### 코드 질 점검을 위한 세부 체크사항은 다음과 같습니다.   
-  > 순서는 크게 상관이 없지만 각각의 체크항목의 개연성을 고려하여 순서가 정의되어 있습니다.   
-  - #### View using 선언 확인   
-    사용하지 않는 선언은 제거하도록 합니다.
-    ### 예를들어:
-    ```xaml
-    <UserControl x:Class="TestProject.Views.TestUserControl1"
-                 xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
-                 ...
-    </UserControl>
-    ```
-    `xmlns:local` 선언을 실제 UserControl 영역에서 사용하고 있지 않는다면 바로 제거합니다. 그리고 향후 필요하다 하더라도 제거 후 나중에 추가하도록 합니다.
-  - #### 연결된 Resource 확인   
-    화면 전용 스타일 리소스 위치를 확인하고 `App.xaml`에 제대로 선언되어 있는지 확인합니다.
-  - #### 각 컨트롤 Style 분류   
-    모든 컨트롤은 각각의 이름 규칙에 맞게 스타일을 만들도록 합니다.
-  - #### 무분별하게 남발된 `x:Name` 선언 부분 제거   
-    View의 .cs 또는 ViewModel 등에서 접근하기 위해 선언된 무분별한 이름 속성들을 폐기하고 우회할 수 있는 방법을 찾도록 합니다.
-  - #### .cs 사용하지 않는 using 제거
-    사용하지 않는 using 문을 제거합니다. TBD...
-    ### 굳이 using을 지워야 하는 이유:
-    사요앟지 않는 using을 지우는 이유에는 여러가지가 있습니다.
-    - #### 가독성
-      TBD...
-    - #### 불필요한 코드
-      TBD...
-    - #### Namespace 중복, 충돌문제
-      TBD...
-    - #### C# 객체지향 구조에 대한 이해도
-      TBD...
+#### 4.1 Remove unused `xmlns:local`   
+```xaml
+<UserControl x:Class="TestProject.Views.TestUserControl"
+             xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
+         ...
+</UserControl>
+```
+
+#### 4.2 Decalre connected resource   
+Check the location of the style resource in use and make sure it is properly declared in `App.xaml`.
+
+#### 4.3 Classify each control style
+Create styles of all controls to match each name rule.
+
+#### 4.4 Remove unused `x:Name`      
+Discard declared reckless name properties for access, such as `.cs` in View or ViewModel, and find a way to bypass them.
+
+#### 4.5 Remove unused `using`
+
+:point_right: __*Why we should remove unused `using`?*__  
+- 가독성
+- 불필요한 코드
+- Namespace 중복, 충돌문제
+- C# 객체지향 구조에 대한 이해도
 <br />
 
 * * *
