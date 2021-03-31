@@ -85,8 +85,8 @@ Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and
 It is recommended that you use a combination of __'While'__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 <br />
 
-:point_right: __Situation that Try Catch should be used__  
-&nbsp; When you need to check *the success of the action* through Try Catch.  
+#### :point_right: <ins>*Situation that Try Catch should be used*</ins>  
+&nbsp; &nbsp; When you need to check *the success of the action* through Try Catch.  
 - `Local File Access`
 - `Crawling`
 - `API`  
