@@ -1,14 +1,14 @@
 # wpf-code-rules
 
 ## Overview
-- [WPF Core DLLs](#star-wpf-core-dlls)
+- [1. WPF Core DLLs](#1.-wpf-core-dlls)
 - [Code Styles](#code-styles)
 - [Try Catch](#try-catch)
 - [Code Quality Check](#code-quality-check)
 - [Resources](#resources)
 <br />
 
-### :star: WPF Core DLLs
+### 1. WPF Core DLLs
 - `System.Xaml`
 - `WindowsBase`
 - `PresentationCore`
