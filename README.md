@@ -177,14 +177,14 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 #### FrameworkElement
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
-|**TextBlock**|**TXB**|System.Windows.Controls.TextBlock|_TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
+|**TextBlock**|**TXB**|System.Windows.Controls|_TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
 <br />
 
 #### ItemsControl
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
-|**ListBox** |**LBX**|System.Windows.Controls.ListBox |_ListBox > Selector > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
-|**TreeView**|**TRV**|System.Windows.Controls.TreeView|_TreeView > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+|**ListBox** |**LBX**|System.Windows.Controls |_ListBox > Selector > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+|**TreeView**|**TRV**|System.Windows.Controls|_TreeView > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 <br />
 
 ## 99. References
