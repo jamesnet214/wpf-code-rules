@@ -1,57 +1,67 @@
 # wpf-code-rules
 
-## WPF Core DLLs
-- System.Xaml
-- WindowsBase
-- PresentationCore
-- PresentationFramework
-
-## Get Started
 ## Overview
-1. Property
-2. Region
-## Property Code Styles
+- [WPF Core DLLs](#star-wpf-core-dlls)
+- [Code Styles](#code-styles)
+- [Try Catch](#try-catch)
+- [Code Quality Check](#code-quality-check)
+- [Resources](#resources)
+<br />
 
-### Property
-```csharp
-public string Email { get; set; }
-```
+### :star: WPF Core DLLs
+- `System.Xaml`
+- `WindowsBase`
+- `PresentationCore`
+- `PresentationFramework`
+<br />
 
-### Get Set Property
-```csharp
-private string _email;
-public string Email 
-{ 
-    get { return _email; } 
-    set { _email = value; } 
-}
-```
-Be sure to name the `private` access restrictor for the variable.
-### Observable Property
-```csharp
-private string _email;
-public string Email 
-{ 
-    get { return _email; } 
-    set { _email = value; OnPropertyChanged(); } 
-}
-```
-~base.OnPropertyChanged();~   
-*Do not recommended to use `.base` for prefixes.*
+### Code Styles
+- [Property](#property)
+- [Region](#region)
+<br />
 
-### Property with method in setter
-```csharp
-private string _email;
-public string Email 
-{ 
-    get { return _email; } 
-    set { _email = value; OnPropertyChanged(); EmailChanged(value); } 
-}
-```
+#### Property
+- __Property__
+    ```csharp
+    public string Email { get; set; }
+    ```
 
-## Region
+- __Get Set Property__
+    ```csharp
+    private string _email;
+    public string Email 
+    { 
+        get { return _email; } 
+        set { _email = value; } 
+    }
+    ```
+    __Be sure to name the `private` access restrictor for the variable.__
 
-### Region: Property
+- __Observable Property__
+    ```csharp
+    private string _email;
+    public string Email 
+    { 
+        get { return _email; } 
+        set { _email = value; OnPropertyChanged(); } 
+    }
+    ```
+    __Do not recommended to use `.base` for prefixes.__  
+    :x: `base.OnPropertyChanged();` &nbsp;&nbsp; :heavy_check_mark: `OnPropertyChanged();`
+
+- __Property with method in setter__
+    ```csharp
+    private string _email;
+    public string Email 
+    { 
+        get { return _email; } 
+        set { _email = value; OnPropertyChanged(); EmailChanged(value); } 
+    }
+    ```
+<br />
+
+#### Region
+
 ```csharp
 #region Email
 
@@ -63,28 +73,31 @@ public string Email
 }
 #endregion
 ```
-## 9. Try Catch
+<br />
 
-Try Catch is generally not recommended.
-### Why should we avoid using Try Catch?  
-> Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
+* * *
 
-> Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
+### Try Catch
 
-### Situation that Try Catch should be used:
-> When you need to check the success of the action through Try Catch.
-> - Local File Access
-> - Crawling
-> - API
-> - External Connection (and more...)
+#### :exclamation: <ins>*Try Catch is generally not recommended.*</ins>  
+Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.<br />  
+Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
+It is recommended that you use a combination of __'While'__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
+<br />
 
-> It is recommended that you use a combination of 'While' statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
+__Situation that Try Catch should be used__  
+&nbsp; :point_right: When you need to check the success of the action through Try Catch.  
+- `Local File Access`
+- `Crawling`
+- `API`  
+- `External Connection`  
+<br />
 
+* * *
 
-## 19. 단위 별 코드 품질 점검
-프로젝트의 코드 품질을 점검하는 방법입니다.
+### Code Quality Check
 
-### View 단위별 체크
+#### View 단위별 체크
 코드 품질 점검을 화면(View) 단위로 점검합니다.
 - #### 코드 질 점검을 위한 세부 체크사항은 다음과 같습니다.   
   > 순서는 크게 상관이 없지만 각각의 체크항목의 개연성을 고려하여 순서가 정의되어 있습니다.   
@@ -116,9 +129,11 @@ Try Catch is generally not recommended.
       TBD...
     - #### C# 객체지향 구조에 대한 이해도
       TBD...
+<br />
 
+* * *
 
-## 89. Resource Rules
+### Resources
 > 'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
 #### Strong Name
 Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
