@@ -82,11 +82,11 @@ public string Email
 Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
 <br />  
 Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
-It is recommended that you use a combination of __'While'__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
+It is recommended that you use a combination of __While__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 <br />
 
 #### :point_right: <ins>*Situation that Try Catch should be used*</ins>  
-When you need to check <ins>the success of the action</ins> through Try Catch.  
+When you need to check __the success of the action__ through Try Catch.  
 - `Local File Access`
 - `Crawling`
 - `API`  
