@@ -188,4 +188,4 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 <br />
 
 ## 99. References
-[the-easiest-markdown](https://github.com/devncore/the-easiest-markdown)
+- [the-easiest-markdown](https://github.com/devncore/the-easiest-markdown)
