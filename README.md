@@ -18,9 +18,8 @@
 ### Code Styles
 - [Property](#property)
 - [Region](#region)
-<br />
 
-#### Property
+### Property
 - __Property__
     ```csharp
     public string Email { get; set; }
@@ -60,7 +59,7 @@
     ```
 <br />
 
-#### Region
+### Region
 
 ```csharp
 #region Email
@@ -86,7 +85,7 @@ It is recommended that you use a combination of __'While'__ statements to implem
 <br />
 
 __Situation that Try Catch should be used__  
-&nbsp; :point_right: When you need to check the success of the action through Try Catch.  
+&nbsp; :point_right: When you need to check *the success of the action* through Try Catch.  
 - `Local File Access`
 - `Crawling`
 - `API`  
