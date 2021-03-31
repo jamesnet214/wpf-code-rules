@@ -171,7 +171,7 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 #### Control
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
-|**TextBox**|**TXT**|System.Windows.Controls.TextBox|_TextBox > TextBoxBase > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+|**TextBox**|**TXT**|System.Windows.Controls|_TextBox > TextBoxBase > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 <br />
     
 #### FrameworkElement
