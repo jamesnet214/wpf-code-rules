@@ -1,11 +1,11 @@
 # wpf-code-rules
 
 ## Overview
-- [1. WPF Core DLLs](#1.-wpf-core-dlls)
-- [Code Styles](#code-styles)
-- [Try Catch](#try-catch)
-- [Code Quality Check](#code-quality-check)
-- [Resources](#resources)
+- [WPF Core DLLs](#1-wpf-core-dlls)
+- [Code Styles](#2-code-styles)
+- [Try Catch](#3-try-catch)
+- [Code Quality Check](#4-code-quality-check)
+- [Resources](#5-resources)
 <br />
 
 ### 1. WPF Core DLLs
@@ -15,11 +15,11 @@
 - `PresentationFramework`
 <br />
 
-### Code Styles
-- [Property](#property)
-- [Region](#region)
+### 2. Code Styles
+- [Property](#21-property)
+- [Region](#22-region)
 
-### Property
+#### 2.1 Property
 - __Property__
     ```csharp
     public string Email { get; set; }
@@ -59,7 +59,7 @@
     ```
 <br />
 
-### Region
+#### 2.2 Region
 
 ```csharp
 #region Email
@@ -76,16 +76,17 @@ public string Email
 
 * * *
 
-### Try Catch
+### 3. Try Catch
 
 #### :exclamation: <ins>*Try Catch is generally not recommended.*</ins>  
-Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.<br />  
+Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
+<br />  
 Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
 It is recommended that you use a combination of __'While'__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
 <br />
 
-__Situation that Try Catch should be used__  
-&nbsp; :point_right: When you need to check *the success of the action* through Try Catch.  
+:point_right: __Situation that Try Catch should be used__  
+&nbsp; When you need to check *the success of the action* through Try Catch.  
 - `Local File Access`
 - `Crawling`
 - `API`  
@@ -94,7 +95,7 @@ __Situation that Try Catch should be used__
 
 * * *
 
-### Code Quality Check
+### 4. Code Quality Check
 
 #### View 단위별 체크
 코드 품질 점검을 화면(View) 단위로 점검합니다.
@@ -132,7 +133,7 @@ __Situation that Try Catch should be used__
 
 * * *
 
-### Resources
+### 5. Resources
 > 'Resource Rules' is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.
 #### Strong Name
 Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
