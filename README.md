@@ -86,7 +86,7 @@ It is recommended that you use a combination of __'While'__ statements to implem
 <br />
 
 #### :point_right: <ins>*Situation that Try Catch should be used*</ins>  
-&nbsp; &nbsp; When you need to check *the success of the action* through Try Catch.  
+When you need to check <ins>the success of the action</ins> through Try Catch.  
 - `Local File Access`
 - `Crawling`
 - `API`  
