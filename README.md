@@ -160,31 +160,39 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 <br />
 
 #### ContentControl
+
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
 |**Button**      |**BTN**|System.Windows.Controls |_Button > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 |**ToggleButton**|**TGL**|System.Windows.Controls.Primitives |_ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 |**RadioButton** |**RDO**|System.Windows.Controls |_RadioButton > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 |**CheckBox**    |**CHB**|System.Windows.Controls |_CheckBox > ToggleButton > ButtonBase > ContentControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+
 <br />
 
 #### Control
+
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
 |**TextBox**|**TXT**|System.Windows.Controls|_TextBox > TextBoxBase > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+
 <br />
-    
+
 #### FrameworkElement
+
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
 |**TextBlock**|**TXB**|System.Windows.Controls|_TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
+
 <br />
 
 #### ItemsControl
+
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
 |**ListBox** |**LBX**|System.Windows.Controls |_ListBox > Selector > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 |**TreeView**|**TRV**|System.Windows.Controls|_TreeView > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
+
 <br />
 
 ## 99. References
