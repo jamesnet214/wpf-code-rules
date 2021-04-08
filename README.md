@@ -1,21 +1,21 @@
 # wpf-code-rules
 
 ## Overview
-- [WPF Core DLLs](#1-wpf-core-dlls)
-- [Code Styles](#2-code-styles)
-- [Try Catch](#3-try-catch)
-- [Code Quality Check](#4-code-quality-check)
-- [Resources](#5-resources)
+- [WPF Core DLLs](#wpf-core-dlls)
+- [Code Styles](#code-styles)
+- [Try Catch](#try-catch)
+- [Code Quality Check](#code-quality-check)
+- [Resources](#resources)
 <br />
 
-### 1. WPF Core DLLs
+### WPF Core DLLs
 - `System.Xaml`
 - `WindowsBase`
 - `PresentationCore`
 - `PresentationFramework`
 <br />
 
-### 2. Code Styles
+### Code Styles
 - [Property](#21-property)
 - [Region](#22-region)
 
@@ -76,7 +76,7 @@ public string Email
 
 * * *
 
-### 3. Try Catch
+### Try Catch
 
 #### :exclamation: <ins>*Try Catch is generally not recommended.*</ins>  
 Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
@@ -95,7 +95,7 @@ When you need to check __the success of the action__ through Try Catch.
 
 * * *
 
-### 4. Code Quality Check
+### Code Quality Check
 
 #### 4.1 Remove unused `xmlns:local`   
 ```xaml
@@ -125,7 +125,7 @@ Discard declared reckless name properties for access, such as `.cs` in View or V
 
 * * *
 
-### 5. Resources
+### Resources
 
 *__Resource Rule__ is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.*
 
