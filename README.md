@@ -112,7 +112,7 @@ When you need to check __the success of the action__ through Try Catch.
 
 ## Code Quality Check
 
-#### Remove unused `xmlns:local`   
+#### ◾ Remove unused `xmlns:local`   
 ```xaml
 <UserControl x:Class="TestProject.Views.TestUserControl"
              xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
@@ -120,16 +120,16 @@ When you need to check __the success of the action__ through Try Catch.
 </UserControl>
 ```
 
-#### Decalre connected resource   
+#### ◾ Decalre connected resource   
 Check the location of the style resource in use and make sure it is properly declared in `App.xaml`.
 
-#### Classify each control style
+#### ◾ Classify each control style
 Create styles of all controls to match each name rule.
 
-#### Remove unused `x:Name`      
+#### ◾ Remove unused `x:Name`      
 Discard declared reckless name properties for access, such as `.cs` in View or ViewModel, and find a way to bypass them.
 
-#### Remove unused `using`
+#### ◾ Remove unused `using`
 
 :point_right: __*Why we should remove unused `using`? (TBD...)*__  
 - Readability
@@ -210,9 +210,8 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 
 <br />
 
-## 99. References
+## References
 
 ### Markdown
 - [Temp Link](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
-
 - [the-easiest-markdown](https://github.com/devncore/the-easiest-markdown)
