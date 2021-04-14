@@ -31,10 +31,10 @@ You can always share information with us and we are looking forward to it.
 <br />
 
 ## Code Styles
-- [Property](#21-property)
-- [Region](#22-region)
+- [Property](#property)
+- [Region](#region)
 
-#### 2.1 Property
+#### Property
 - __Property__
     ```csharp
     public string Email { get; set; }
@@ -74,7 +74,7 @@ You can always share information with us and we are looking forward to it.
     ```
 <br />
 
-#### 2.2 Region
+#### Region
 
 ```csharp
 #region Email
@@ -112,7 +112,7 @@ When you need to check __the success of the action__ through Try Catch.
 
 ## Code Quality Check
 
-#### 4.1 Remove unused `xmlns:local`   
+#### Remove unused `xmlns:local`   
 ```xaml
 <UserControl x:Class="TestProject.Views.TestUserControl"
              xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
@@ -120,16 +120,16 @@ When you need to check __the success of the action__ through Try Catch.
 </UserControl>
 ```
 
-#### 4.2 Decalre connected resource   
+#### Decalre connected resource   
 Check the location of the style resource in use and make sure it is properly declared in `App.xaml`.
 
-#### 4.3 Classify each control style
+#### Classify each control style
 Create styles of all controls to match each name rule.
 
-#### 4.4 Remove unused `x:Name`      
+#### Remove unused `x:Name`      
 Discard declared reckless name properties for access, such as `.cs` in View or ViewModel, and find a way to bypass them.
 
-#### 4.5 Remove unused `using`
+#### Remove unused `using`
 
 :point_right: __*Why we should remove unused `using`? (TBD...)*__  
 - Readability
