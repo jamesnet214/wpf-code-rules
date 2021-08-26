@@ -99,7 +99,7 @@ Try Catch 영역에서 일어난 에러들은 프로그램 작동 주기에 반�
 
 ## 코드 품질 체크
 
-#### ◾ Remove unused `xmlns:local`   
+#### ◾ 사용하지 않는 `xmlns:local` 제거   
 ```xaml
 <UserControl x:Class="TestProject.Views.TestUserControl"
              xmlns:local="clr-namespace:TestProject.Views;assembly=TestProject">
@@ -107,22 +107,20 @@ Try Catch 영역에서 일어난 에러들은 프로그램 작동 주기에 반�
 </UserControl>
 ```
 
-#### ◾ Decalre connected resource   
-Check the location of the style resource in use and make sure it is properly declared in `App.xaml`.
+#### ◾ 연결된 리소스 명시   
+사용중인 스타일 리소스의 위치를 확인하고 `App.xaml`에 적절히 선언되었는지 확인합니다.
 
-#### ◾ Classify each control style
-Create styles of all controls to match each name rule.
+#### ◾ 각 컨트롤 스타일의 분류
+컨트롤들의 스타일은 각각의 네이밍 규칙에 맞춰 생성합니다.
 
-#### ◾ Remove unused `x:Name`      
-Discard declared reckless name properties for access, such as `.cs` in View or ViewModel, and find a way to bypass them.
+#### ◾ 사용하지 않는 `x:Name` 제거      
+View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제하고 이를 대체할 방법을 찾습니다.
 
-#### ◾ Remove unused `using`
-
-:point_right: __*Why we should remove unused `using`? (TBD...)*__  
-- Readability
-- Unnecessary code
-- Namespace redundancy, conflict issues
-- Understanding of object-oriented structures of C#
+#### ◾ 사용하지 않는 `using` 제거
+- 가독성
+- 불필요한 코드
+- 네임스페이스의 불필요한 반복과 충돌 이슈
+- C#의 객체지향 구조에 대한 이해
 <br />
 
 ## Resources
