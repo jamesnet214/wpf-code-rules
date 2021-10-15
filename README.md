@@ -28,18 +28,18 @@
 - [Resources](#resources)
 <br />
 
-## WPF Core DLLs
+## WPF 핵심 DLLs
 - `System.Xaml`
 - `WindowsBase`
 - `PresentationCore`
 - `PresentationFramework`
 <br />
 
-## Code Styles
+## 코드 스타일
 - [Property](#property)
 - [Region](#region)
 
-#### Property
+#### 프로퍼티
 - __Property__
     ```csharp
     public string Email { get; set; }
