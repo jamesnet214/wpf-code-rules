@@ -21,15 +21,15 @@
   
 
 ## 소개
-- [WPF Core DLLs](#wpf-core-dlls)
-- [Code Styles](#code-styles)
+- [핵심 DLL](#핵심-dll)
+- [코드 스타일](#코드-스타일)
 - [Try Catch](#try-catch)
 - [Code Quality Check](#code-quality-check)
 - [Resources](#resources)
  
 <br />
 
-## WPF 핵심 DLLs
+## 핵심 DLL
 - `System.Xaml`
 - `WindowsBase`
 - `PresentationCore`
@@ -40,7 +40,7 @@
 - [Property](#property)
 - [Region](#region)
 
-#### 프로퍼티
+#### Property
 - __Property__
     ```csharp
     public string Email { get; set; }
