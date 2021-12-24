@@ -215,10 +215,3 @@ Temporarily creating resource without rules is a very bad way to develop them. T
 |**ListBox** |**LBX**|System.Windows.Controls |_ListBox > Selector > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 |**TreeView**|**TRV**|System.Windows.Controls|_TreeView > ItemsControl > Control > FrameworkElement > UIElement > Visual > DependencyObject_|
 
-<br />
-
-## References
-
-### Markdown
-- [Temp Link](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
-- [the-easiest-markdown](https://github.com/devncore/the-easiest-markdown)
