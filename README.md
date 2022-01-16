@@ -1,6 +1,6 @@
 ## WPF Code Rules
   
-이 리포지토리는 WPF 프로젝트를 우수한 구조 형태로 설계하고 기술을 활용하는데 필요한 설명을 다루는 Article입니다. <br />
+이 레포지토리는 체계적인 프로젝트 구조 생성을 위한 WPF 코드 규칙에 대해 설명하고 있습니다. <br />
 
 <a href="https://github.com/devncore/devncore"><strong>더 알아보기 »</strong></a>
   
