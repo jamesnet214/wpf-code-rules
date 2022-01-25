@@ -89,12 +89,12 @@ Try Catch 영역에서 일어난 에러들은 프로그램 작동 주기에 반�
 특히 `xaml`과 `cs`, 리소스 영역 간 유기적인 흐름을 유지하는 WPF 애플리케이션은 개발 단계부터 Try Catch를 사용하지 않을 때 더욱 큰 이점을 가집니다. Try Catch 영역의 반복을 유도하고 사용자가 제어할 수 있는 코드를 구현하려면 **While**문을 조합하여 사용하는 것이 좋습니다.
 <br />
 
-#### 👉 <ins>*Situation that Try Catch should be used*</ins>  
-When you need to check __the success of the action__ through Try Catch.  
-- `Local File Access`
-- `Crawling`
-- `API`  
-- `External Connection`  
+#### 👉 <ins>*Try Catch를 반드시 사용해야 하는 경우*</ins>  
+특정 행위의 성공 여부를 체크해야 할 때는 Try Catch를 사용하는 것이 좋습니다.  
+- 로컬 파일 접근  
+- 크롤링  
+- 외부 연결
+- API  
 <br />
 
 ## 코드 품질 체크
