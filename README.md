@@ -14,7 +14,7 @@
 - [핵심 DLL](#핵심-dll)
 - [코드 스타일](#코드-스타일)
 - [Try Catch](#try-catch)
-- [코드 품질 체크](#코드-품질크체크)
+- [코드 품질 체크](#코드-품질-체크)
 - [Resources](#resources)
  
 <br />
@@ -54,7 +54,7 @@ public string Email
 ```
 __`base`를 사용하는 것은 추천하지 않습니다.__   
 
-:x: `base.OnPropertyChanged();` &nbsp;&nbsp; :heavy_check_mark: `OnPropertyChanged();`
+❌ `base.OnPropertyChanged();` &nbsp;&nbsp; ✔️ `OnPropertyChanged();`
 
 #### Property with method in setter
 ```csharp
@@ -83,14 +83,13 @@ public string Email
 
 ## Try Catch
 
-#### :exclamation: <ins>*Try Catch is generally not recommended.*</ins>  
-Errors in the Try Catch area are not reflected in the program's operating cycle, which can cause application flow problems. To avoid this, it is not recommended to use Try Catch from the development stage.
-<br />  
-Especially, WPF applications that maintain organic flow to `.Xaml` and `.cs` and `Resource` areas have an advantage in not using Try Catch from the development stage.
-It is recommended that you use a combination of __While__ statements to implement code that induces repetition of the Try Catch area and allows the user to control it.
+#### ❗ <ins>*Try Catch의 사용은 추천하지 않습니다.*</ins>  
+Try Catch 영역에서 일어난 에러들은 프로그램 작동 주기에 반영되지 않기 때문에 응용 프로그램 흐름 문제를 발생시킬 수 있습니다. 이러한 문제를 방지하려면 개발 단계부터 Try Catch를 사용하지 않는 것이 좋습니다.
+
+특히 `xaml`과 `cs`, 리소스 영역 간 유기적인 흐름을 유지하는 WPF 애플리케이션은 개발 단계부터 Try Catch를 사용하지 않을 때 더욱 큰 이점을 가집니다. Try Catch 영역의 반복을 유도하고 사용자가 제어할 수 있는 코드를 구현하려면 **While**문을 조합하여 사용하는 것이 좋습니다.
 <br />
 
-#### :point_right: <ins>*Situation that Try Catch should be used*</ins>  
+#### 👉 <ins>*Situation that Try Catch should be used*</ins>  
 When you need to check __the success of the action__ through Try Catch.  
 - `Local File Access`
 - `Crawling`
