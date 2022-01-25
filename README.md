@@ -14,7 +14,7 @@
 - [핵심 DLL](#핵심-dll)
 - [코드 스타일](#코드-스타일)
 - [Try Catch](#try-catch)
-- [Code Quality Check](#code-quality-check)
+- [코드 품질 체크](#코드-품질크체크)
 - [Resources](#resources)
  
 <br />
@@ -27,49 +27,45 @@
 <br />
 
 ## 코드 스타일
-- [Property](#property)
-- [Region](#region)
 
 #### Property
-- __Property__
-    ```csharp
-    public string Email { get; set; }
-    ```
+  ```csharp
+  public string Email { get; set; }
+  ```
 
-- __Get Set Property__
-    ```csharp
-    private string _email;
-    public string Email 
-    { 
-        get { return _email; } 
-        set { _email = value; } 
-    }
-    ```
-    __Be sure to name the `private` access restrictor for the variable.__
+#### Get Set Property
+```csharp
+private string _email;
+public string Email 
+{ 
+    get { return _email; } 
+    set { _email = value; } 
+}
+```
 
-- __Observable Property__
-    ```csharp
-    private string _email;
-    public string Email 
-    { 
-        get { return _email; } 
-        set { _email = value; OnPropertyChanged(); } 
-    }
-    ```
-    __Do not recommended to use `.base` for prefixes.__  
-    :x: `base.OnPropertyChanged();` &nbsp;&nbsp; :heavy_check_mark: `OnPropertyChanged();`
+#### Observable Property
+```csharp
+private string _email;
+public string Email 
+{ 
+    get { return _email; } 
+    set { _email = value; OnPropertyChanged(); } 
+}
+```
+__`base`를 사용하는 것은 추천하지 않습니다.__   
 
-- __Property with method in setter__
-    ```csharp
-    private string _email;
-    public string Email 
-    { 
-        get { return _email; } 
-        set { _email = value; OnPropertyChanged(); EmailChanged(value); } 
-    }
-    ```
-<br />
+:x: `base.OnPropertyChanged();` &nbsp;&nbsp; :heavy_check_mark: `OnPropertyChanged();`
 
+#### Property with method in setter
+```csharp
+private string _email;
+public string Email 
+{ 
+    get { return _email; } 
+    set { _email = value; OnPropertyChanged(); EmailChanged(value); } 
+}
+```
+    
 #### Region
 
 ```csharp
@@ -84,8 +80,6 @@ public string Email
 #endregion
 ```
 <br />
-
-* * *
 
 ## Try Catch
 
@@ -104,9 +98,7 @@ When you need to check __the success of the action__ through Try Catch.
 - `External Connection`  
 <br />
 
-* * *
-
-## Code Quality Check
+## 코드 품질 체크
 
 #### ◾ Remove unused `xmlns:local`   
 ```xaml
@@ -133,8 +125,6 @@ Discard declared reckless name properties for access, such as `.cs` in View or V
 - Namespace redundancy, conflict issues
 - Understanding of object-oriented structures of C#
 <br />
-
-* * *
 
 ## Resources
 
