@@ -179,9 +179,9 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 
 > #### FrameworkElement
 
-|Control|Naming|Namespace, Inheritance Flow|
-|:-----:|:----:|:---------------|
-|**TextBlock**|**TXB**| :black_medium_small_square: **System.Windows.Controls**<br/> :white_medium_small_square: _TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
+|Control|Naming|Namespace|Inheritance Flow|
+|:-----:|:----:|:-------|:--------|
+|**TextBlock**|**TXB**| System.Windows.Controls| _TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
 
 <br />
 
