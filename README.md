@@ -124,14 +124,11 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 <br />
 
 ## Resources
+*WPF 프로그램에서 **리소스 규칙**은 매우 중요하기 때문에 프로그램의 UI 설계보다 더 많은 노력을 기울여야 합니다. 따라서 WPF에서 사용하는 주요 리소스에 대한 가이드를 최대한 상세하게 제공하고자 합니다.*
 
-*__Resource Rule__ is so important in WPF programs that you have to put more effort into than the program's UI design. Therefore, we would like to provide a guide to the main resources used by WPF in as much detail as possible.*
+프로젝트에서 리소스 시스템을 관리하는 것은 매우 복잡하고 어렵습니다. 그래서 처음부터 끝까지 엄격하고 **강력한 네이밍 규칙**을 지키는 것이 매우 중요하며, 이는 지속적인 인내를 필요로 합니다.
 
-#### :exclamation: Strong Name
-Managing the resource system in a project is very complex and difficult. So, it is very important to abide by strict and strong naming rules from start to finish, and it requires continued patience.
-
-#### :exclamation: Do not write without rules.
-Temporarily creating resource without rules is a very bad way to develop them. This is because unmanaged resources accumulate, greatly __hindering the readability and functional scalability of all program logic__. Also, disorderly resources will continue to torment developers until the end of the program's life cycle. Therefore, it is important to make and maintain rules even if it is annoying at the time.
+리소스들을 정해진 규칙 없이 일시적으로 생성하는 것은 매우 나쁜 방법입니다. 이는 관리되지 않는 리소스들이 축적되어 모든 프로그램 로직의 가독성과 기능적 확장성을 크게 방해하기 때문입니다. 또한, 무질서한 리소스는 프로그램의 생명 주기가 끝날 때까지 개발자들을 계속 괴롭힐 것입니다. 그렇기 때문에 약간 귀찮더라도 규칙을 만들고 유지하는 것이 중요합니다.
 
 #### Style Classification Tree Structure
 - Visual
