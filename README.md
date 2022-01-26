@@ -130,31 +130,35 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 
 리소스들을 정해진 규칙 없이 일시적으로 생성하는 것은 매우 나쁜 방법입니다. 이는 관리되지 않는 리소스들이 축적되어 모든 프로그램 로직의 가독성과 기능적 확장성을 크게 방해하기 때문입니다. 또한, 무질서한 리소스는 프로그램의 생명 주기가 끝날 때까지 개발자들을 계속 괴롭힐 것입니다. 그렇기 때문에 약간 귀찮더라도 규칙을 만들고 유지하는 것이 중요합니다.
 
-#### Style Classification Tree Structure
-- Visual
-    - ContentControl
-      - Button
-      - ToggleButton
-      - RadioButton
-      - CheckBox
-    - Control
-      - TextBox
-    - FrameworkElement
-      - TextBlock
-    - ItemsControl
-      - ListBox (with ListBoxItem)
-      - TreeView (with TreeViewItem)
-- Design
-    - SolidBrush
-    - Path
-    - Geometry
-    - Drawing   
-  
-    #### :point_right: The reason for the detailed classification of styles.   
-    &nbsp; If WPF properties are applied directly from the screen under development, source code readability, simplicity and quality can no longer be expected. Therefore, style rules and names should be intuitive and designed to infer functions and intentions.
+#### 스타일 분류 트리구조
+<details open>
+  <summary><b>Visual</b></summary>
+
+  - [ContentControl](https://github.com/devncore/wpf-code-rules#contentcontrol)
+    - Button
+    - ToggleButton
+    - RadioButton
+    - CheckBox
+  - [Control](https://github.com/devncore/wpf-code-rules#control)
+    - TextBox
+  - [FrameworkElement](https://github.com/devncore/wpf-code-rules#frameworkelement)
+    - TextBlock
+  - [ItemsControl](https://github.com/devncore/wpf-code-rules#itemscontrol)
+    - ListBox (with ListBoxItem)
+    - TreeView (with TreeViewItem)
+</details>
+
+<details open>
+  <summary><b>Design</b></summary>
+
+  - SolidBrush
+  - Path
+  - Geometry
+  - Drawing  
+</details>
 <br />
 
-#### ContentControl
+> #### ContentControl
 
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
@@ -165,7 +169,7 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 
 <br />
 
-#### Control
+> #### Control
 
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
@@ -173,7 +177,7 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 
 <br />
 
-#### FrameworkElement
+> #### FrameworkElement
 
 |Control|Naming|Namespace, Inheritance Flow|
 |:-----:|:----:|:---------------|
@@ -181,7 +185,7 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 
 <br />
 
-#### ItemsControl
+> #### ItemsControl
 
 |Control|Naming|Namespace|Inheritance Flow|
 |:-----:|:----:|:--------|:---------------|
