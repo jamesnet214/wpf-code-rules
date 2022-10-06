@@ -184,7 +184,6 @@ View 또는 ViewModel의 `.cs` 접근을 위해 선언된 `x:Name`들을 삭제�
 |**TextBlock**|**TXB**| System.Windows.Controls| _TextBlock > FrameworkElement > UIElement > Visual > DependencyObject_|
 
 <br />
-
 > #### ItemsControl
 
 |Control|Naming|Namespace|Inheritance Flow|
